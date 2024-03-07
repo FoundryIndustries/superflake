@@ -17,6 +17,8 @@ pub struct DecodedSuperflake {
     pub timestamp: u64
 }
 
+const DEFAULT_EPOCH: u64 = 1_616_275_800_000; // March 20, 2021
+
 impl Superflake {
     #[inline]
     pub fn gen(&mut self) -> u64 {
@@ -28,7 +30,7 @@ impl Superflake {
             inc: 0,
             node_id,
             last_incremental_exhaustion: 0,
-            epoch: epoch.unwrap_or(1_616_360_400_000)
+            epoch: epoch.unwrap_or(DEFAULT_EPOCH)
         }
     }
 

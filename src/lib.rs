@@ -16,6 +16,8 @@ mod tests {
 
         assert_eq!(decoded.id, id);
         assert_eq!(decoded.node_id, 1023);
+
+        println!("{:?}", decoded);
     }
 
     #[test]
