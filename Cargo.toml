@@ -1,8 +1,9 @@
 [package]
 name = "superflake"
-version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+version = "0.1.0"
+license = "Apache-2.0"
+description = "Ultra-safe identification technology"
+authors = ["Foundry Industries", "Aidak <hello@aidak.dev>"]
 
 [dependencies]
